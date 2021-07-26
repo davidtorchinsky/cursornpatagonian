@@ -16,7 +16,7 @@ import {colors} from './src/utils/theme';
 import {DEVICE_WIDTH} from './src/utils/dimensions';
 
 const showAlert = () => {
-  Alert.alert('Hola!');
+  Alert.alert('Buen curso!');
 };
 
 const App = () => {
@@ -29,7 +29,7 @@ const App = () => {
         style={styles.image}
         resizeMode="contain"
       />
-      <DefaultButton onPress={showAlert} title={'nose'} />
+      <DefaultButton onPress={showAlert} title={24} textSize={24} additionalStyle={styles.button} />
     </View>
   );
 };
@@ -37,13 +37,13 @@ const App = () => {
 const styles = StyleSheet.create({
   mainContainer: {
     alignItems: 'center',
-    backgroundColor: colors.verylightBlue,
+    backgroundColor: colors.dodgerblue,
     flex: 1,
     justifyContent: 'center',
     width: '100%',
   },
   title: {
-    color: colors.mainOrange,
+    color: colors.chocolate,
     fontSize: 30,
     fontWeight: 'bold',
     fontStyle: 'italic',
@@ -53,6 +53,9 @@ const styles = StyleSheet.create({
     aspectRatio: 1,
     minHeight: 100,
     width: DEVICE_WIDTH * 0.5,
+  },
+  button: {
+    backgroundColor: '#6b8e23',
   },
 });
 

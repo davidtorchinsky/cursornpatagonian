@@ -29,7 +29,12 @@ const App = () => {
         style={styles.image}
         resizeMode="contain"
       />
-      <DefaultButton onPress={showAlert} title={24} textSize={24} additionalStyle={styles.button} />
+      <DefaultButton
+        onPress={showAlert}
+        title={'Mensaje personalizado'}
+        textSize={24}
+        additionalStyle={styles.button}
+      />
     </View>
   );
 };
